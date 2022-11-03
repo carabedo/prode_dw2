@@ -9,3 +9,12 @@ coleccionGrupos=document.getElementById('menu-grupos').getElementsByTagName('li'
 for (let i = 0; i < 8; i++) {
     coleccionGrupos[i].addEventListener('click', () => activarGrupo(i));
 }
+
+// defini activarGrupo
+
+function activarGrupo(i){
+
+    coleccionGrupos[grupo_activo].classList.toggle('active')
+    coleccionGrupos[i].classList.toggle('active')
+    grupo_activo=i
+}
