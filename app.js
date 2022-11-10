@@ -14,6 +14,7 @@ function activarGrupo(i){
     coleccionGrupos[grupo_activo].classList.toggle('active')
     coleccionGrupos[i].classList.toggle('active')
     grupo_activo=i
+    completarPartidos(i)
 }
 
 //array de grupos
