@@ -29,3 +29,34 @@ function mostrarPartidos(i){
     }
     return partidosFiltrados
 }
+
+// Se completo los partidos de cada grupo, y lo agregamos al eventListerine de los botones
+function completarPartidos(i){
+
+    divPartidos=document.getElementsByClassName("partido")
+    partidos=mostrarPartidos(i)
+    for (let j=0; j<6; j++){
+    nombreEquipo1=partidos[j].team_1
+    nombreEquipo2=partidos[j].team_2
+    divPartidos[j].getElementsByClassName("equipo1")[0].innerText=nombreEquipo1  
+    divPartidos[j].getElementsByClassName("equipo2")[0].innerText=nombreEquipo2
+    }
+}
+
+//Función auxiliar para darle formato a la fecha y hora del partido 
+function parsetime(datetime) {
+    var formato = {
+        day: "2-digit",
+        weekday: "short",
+        month: "short",
+        hour: "numeric",
+        minute: "2-digit"
+    }
+    a = new Date(datetime)
+    s = new Intl.DateTimeFormat("es-AR",formato).format(a)
+
+    fecha = s.slice(0, 11)
+    hora = s.slice(11, s.length);
+
+    return fecha.concat(". / ").concat(hora).replace(",", ".").toUpperCase().concat(" Hs.")
+}
