@@ -15,6 +15,11 @@ function activarGrupo(i){
     coleccionGrupos[i].classList.toggle('active')
     grupo_activo=i
     completarPartidos(i)
+
+    DivFechaHorario=document.querySelectorAll("div.status.fecha-hora")
+    HorariosCrudos=EncontrarHorarios(i)
+    HorariosConvertidos=ConvertirHorarios(HorariosCrudos)
+    CompletarFechas(DivFechaHorario, HorariosConvertidos)
 }
 
 //array de grupos
@@ -61,3 +66,40 @@ function parsetime(datetime) {
 
     return fecha.concat(". / ").concat(hora).replace(",", ".").toUpperCase().concat(" Hs.")
 }
+
+//Rastrear los divs donde va la fecha y hora usando "QuerySelectorAll" y almacenarlos en "DivFechaHorario[]"
+
+
+//Rastrear "datetime" perteneciente a cada partido usando el indice de "partidos" y almacenarlos en "ArrayHorarios[]"
+function EncontrarHorarios(i) {
+    partidos=mostrarPartidos(i);
+    ArrayHorarios=[];
+    for (let f=0; f<6; f++) {
+        ArrayHorarios.push(partidos[f].datetime)
+    };
+    return ArrayHorarios;
+};
+
+
+//Pasar cada valor de "ArrayHorarios[]" por "parsetime()" y almacenarlos en "FechasHorarios[]"
+function ConvertirHorarios(HorariosCrudos) {
+    FechasHorarios=[];
+    for (let g=0; g<6; g++) {
+        FechasHorarios.push(parsetime(HorariosCrudos[g]));
+    };
+    return FechasHorarios;
+};
+
+
+//Reemplazar los valores de "FechasHorarios[]" en "DivFechaHorario[]" usando inner.text
+function CompletarFechas(DivFechaHorario, FechasHorarios) {
+    for (let p=0; p<6; p++) {
+        DivFechaHorario[p].innerText=FechasHorarios[p]; 
+    };
+};
+
+
+
+
+
+
