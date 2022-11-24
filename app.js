@@ -103,58 +103,6 @@ function CompletarFechas(DivFechaHorario, FechasHorarios) {
     };
 };
 
-// inputs para completar los resultados de los partidos
-arrayResultados = [
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo A
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo B
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo C
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo D
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo E
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo F
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo G
-    ['', '',
-        '', '',
-        '', '',
-        '', '',
-        '', '',
-        '', ''],  // grupo H
-];
-
 
 resultados = {
     0: [
@@ -231,18 +179,15 @@ for (let i = 0; i < 6; i++) {
     equiposInputs = divsInputs[i].querySelectorAll('input');
     //  y la variable j los equipos (o columnas)
     for (let j = 0; j < 2; j++) {
-        equiposInputs[j].addEventListener('keydown', (evento) => chequearInput(evento));
+        equiposInputs[j].addEventListener('keydown', (evento) => chequearInput_focusNext(evento));
         equiposInputs[j].addEventListener('keyup', (evento) => guardarResultado(i, j, evento));
     }
 }
 
 // creamos la función chequearInput para verificar que el usuario ingresó un número y no una letra o carácter especial
-function chequearInput(evento) {
-    if ("0123456789".includes(evento.key)) {
-        console.log("si es un numero")
-    } else {
-        evento.preventDefault();
-    }
+function chequearInput_focusNext(evento) {
+    a = "0123456789".includes(evento.key);
+    a ? setTimeout(()=>focusNext(evento), 100) : evento.preventDefault()
 }
 
 // función destinada a guardar el dato ingreso por el usuario en la "base de datos" local
@@ -261,5 +206,24 @@ function actualizarResultadosGrupos() {
             equiposInputs[j].value = resultados[grupo_activo][i][j];
         }
     }
-
 }
+
+function focusNext (evento){
+    inputActivo=evento.target
+    inputsTel=Array.from(document.querySelectorAll("input"))   
+    index= inputsTel.indexOf(inputActivo)
+    
+    if (index<inputsTel.length-1) {
+        inputsTel[index+1].focus()
+    }
+    else {
+        if (grupo_activo<7) {
+            activarGrupo(grupo_activo+1)
+            inputsTel[0].focus()
+        } else {
+            botonGuardar=document.querySelector("#btnGuardar")
+            botonGuardar.focus()
+        }
+    }
+}
+
