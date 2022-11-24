@@ -231,7 +231,7 @@ for (let i = 0; i < 6; i++) {
     equiposInputs = divsInputs[i].querySelectorAll('input');
     //  y la variable j los equipos (o columnas)
     for (let j = 0; j < 2; j++) {
-        equiposInputs[j].addEventListener('keyup', (evento) => chequearInput(evento));
+        equiposInputs[j].addEventListener('keydown', (evento) => chequearInput(evento));
         equiposInputs[j].addEventListener('keyup', (evento) => guardarResultado(i, j, evento));
     }
 }
@@ -241,7 +241,7 @@ function chequearInput(evento) {
     if ("0123456789".includes(evento.key)) {
         console.log("si es un numero")
     } else {
-        evento.preventDefault();    // TODO: NO FUNCIONA :(
+        evento.preventDefault();
     }
 }
 
