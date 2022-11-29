@@ -4,20 +4,20 @@
 
 ### Fixture
 
-- Agregando eventlisteners, tenemos que lograr que al clickear sobre los iconos de los grupos, aparezca el nombre del grupo y tambien cambie de color el icono.
-- Luego de haber hecho lo anterior, ahora tenemos que cargar los partidos de cada grupo.
+- Agregando métodos .addEventListener(), tenemos que lograr que al clickear sobre los íconos de los grupos, aparezca el nombre del grupo y también cambie de color el ícono. ✅
+- Luego de haber hecho lo anterior, ahora tenemos que cargar los partidos de cada grupo. ✅
 
 ### Inputs
 
-- Hay que lograr que cuando se haga click sobre un input se active y permita ingresar solo numeros.
-- Para ir guardando los datos ingresados, tenemos que generar una matriz vacia y llenarla cada vez que se ingresa un numero en algun input.
-- Ademas estaria bueno agregar un eventlistener que al completar un input, haga foco sobre el siguiente.
+- Hay que lograr que cuando se haga click sobre un input se active y permita ingresar solo números. ✅
+- Para ir guardando los datos ingresados, tenemos que generar una matriz vacía y llenarla cada vez que se ingresa un número en algún input. ✅
+- Además estaría bueno agregar un método .addEventListener() que al completar un input, haga foco sobre el siguiente. ✅
 
-### Extra (Diseño Responsive)
+### Extra (diseño responsive)
 
-- Buscar en el html los botones menos y mas que aparecen en la version mobile de la pagina.
-- Agregarle evente listeners que sumen/resten goles, si no esta completo que agreguen un 0 y sumen.
+- Buscar en el .html los botones ‘menos’ y ‘más’ que aparecen en la versión mobile de la página.
+- Agregar un método .addEventListener() que sumen/resten goles, si no está completo que agreguen un 0 y sumen.
 
-### Extra 2 (Apis)
+### Extra 2 (APIs)
 
-- Cuando este todo completo usando fetch, haga un requests post con los resultados.
+- Cuando esté todo completo usando fetch(), hacer un request post con los resultados.
