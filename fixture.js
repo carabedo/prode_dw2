@@ -44,7 +44,7 @@ let fixture = [
         "points": 0,
         "team_1": "Senegal",
         "team_1_id": 1226,
-        "team_2": "Holanda",
+        "team_2": "Países Bajos",
         "team_2_id": 366,
         "goal_1": null,
         "goal_2": null,
@@ -62,7 +62,7 @@ let fixture = [
     {
         "match_id": 2277793,
         "points": 0,
-        "team_1": "EE.UU.",
+        "team_1": "Estados Unidos",
         "team_1_id": 596,
         "team_2": "Gales",
         "team_2_id": 508,
@@ -84,7 +84,7 @@ let fixture = [
         "points": 0,
         "team_1": "Argentina",
         "team_1_id": 632,
-        "team_2": "A. Saudita",
+        "team_2": "Arabia Saudita",
         "team_2_id": 1264,
         "goal_1": 1,
         "goal_2": 1,
@@ -264,7 +264,7 @@ let fixture = [
         "points": 0,
         "team_1": "Uruguay",
         "team_1_id": 837,
-        "team_2": "R. Corea",
+        "team_2": "Corea del Sur",
         "team_2_id": 1041,
         "goal_1": null,
         "goal_2": null,
@@ -362,7 +362,7 @@ let fixture = [
     {
         "match_id": 2277808,
         "points": 0,
-        "team_1": "Holanda",
+        "team_1": "Países Bajos",
         "team_1_id": 366,
         "team_2": "Ecuador",
         "team_2_id": 830,
@@ -384,7 +384,7 @@ let fixture = [
         "points": 0,
         "team_1": "Inglaterra",
         "team_1_id": 114,
-        "team_2": "EE.UU.",
+        "team_2": "Estados Unidos",
         "team_2_id": 596,
         "goal_1": null,
         "goal_2": null,
@@ -424,7 +424,7 @@ let fixture = [
         "points": 0,
         "team_1": "Polonia",
         "team_1_id": 511,
-        "team_2": "A. Saudita",
+        "team_2": "Arabia Saudita",
         "team_2_id": 1264,
         "goal_1": 1,
         "goal_2": 1,
@@ -582,7 +582,7 @@ let fixture = [
     {
         "match_id": 2277822,
         "points": 0,
-        "team_1": "R. Corea",
+        "team_1": "Corea del Sur",
         "team_1_id": 1041,
         "team_2": "Ghana",
         "team_2_id": 1219,
@@ -642,7 +642,7 @@ let fixture = [
     {
         "match_id": 2277823,
         "points": 0,
-        "team_1": "Holanda",
+        "team_1": "Países Bajos",
         "team_1_id": 366,
         "team_2": "Qatar",
         "team_2_id": 1873,
@@ -704,7 +704,7 @@ let fixture = [
         "points": 0,
         "team_1": "Ir\u00e1n",
         "team_1_id": 1042,
-        "team_2": "EE.UU.",
+        "team_2": "Estados Unidos",
         "team_2_id": 596,
         "goal_1": null,
         "goal_2": null,
@@ -762,7 +762,7 @@ let fixture = [
     {
         "match_id": 2277828,
         "points": 0,
-        "team_1": "A. Saudita",
+        "team_1": "Arabia Saudita",
         "team_1_id": 1264,
         "team_2": "M\u00e9xico",
         "team_2_id": 659,
@@ -902,7 +902,7 @@ let fixture = [
     {
         "match_id": 2277837,
         "points": 0,
-        "team_1": "R. Corea",
+        "team_1": "Corea del Sur",
         "team_1_id": 1041,
         "team_2": "Portugal",
         "team_2_id": 359,
@@ -1279,7 +1279,6 @@ let fixture = [
         "minutes_left_to_start_match": 77026,
         "status": "pre_match"
     }
-    ]
-    
-    
-    
+]
+
+
