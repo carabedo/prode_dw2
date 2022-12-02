@@ -293,6 +293,8 @@ function chequearCasillasTotales() {
         } else {
             // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
             console.log(arregloResultados[o]);
+            prompt("Ingrese su mail:");
+            resetResultados();
         }
     }
 }
@@ -318,6 +320,7 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo B
@@ -333,9 +336,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo C
@@ -351,9 +356,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo D
@@ -369,9 +376,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo E
@@ -387,9 +396,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo F
@@ -405,9 +416,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo G
@@ -423,9 +436,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
 
         // grupo H
@@ -441,9 +456,11 @@ function chequearCasillasPorGrupo() {
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
                     console.log(arregloResultados[o]);
+                    resetResultados();
                 }
             }
 
+            prompt("Ingrese su mail:");
             break;
     }
 }
