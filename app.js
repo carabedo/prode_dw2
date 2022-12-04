@@ -288,12 +288,17 @@ function chequearCasillasTotales() {
         n = "''".includes(arregloResultados[o]);
         if (n) {
             // ! AGREGAR ALERTA DE ERROR
-            alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+            swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
             return;
         } else {
             // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
             console.log(arregloResultados[o]);
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+            
             resetResultados();
         }
     }
@@ -311,7 +316,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -320,7 +325,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+            .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo B
@@ -331,7 +346,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -340,7 +355,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo C
@@ -351,7 +376,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -360,7 +385,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo D
@@ -371,7 +406,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -380,7 +415,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo E
@@ -391,7 +436,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -400,7 +445,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo F
@@ -411,7 +466,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -420,7 +475,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo G
@@ -431,7 +496,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -440,7 +505,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
 
         // grupo H
@@ -451,7 +526,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    alert("Error... ha dejado casillas vacías, por favor complete todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -460,7 +535,17 @@ function chequearCasillasPorGrupo() {
                 }
             }
 
-            prompt("Ingrese su mail:");
+            swal({
+                text: 'Ingrese su mail',
+                content: "input",
+                button: {text: "Guardar y Enviar",},
+              })
+              .then(() => {swal({
+                title: "¡Muy Bien!",
+                text: "Sus resultados fueron guardados con exito",
+                icon: "success",
+                button: "Volver",
+              });});
             break;
     }
 }
