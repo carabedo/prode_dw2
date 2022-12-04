@@ -288,7 +288,7 @@ function chequearCasillasTotales() {
         n = "''".includes(arregloResultados[o]);
         if (n) {
             // ! AGREGAR ALERTA DE ERROR
-            swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+            swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
             return;
         } else {
             // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -316,7 +316,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -346,7 +346,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -376,7 +376,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -406,7 +406,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -436,7 +436,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -466,7 +466,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -496,7 +496,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
@@ -526,7 +526,7 @@ function chequearCasillasPorGrupo() {
                 n = "''".includes(arregloResultados[o]);
                 if (n) {
                     // ! AGREGAR ALERTA DE ERROR
-                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode");
+                    swal("Error", "Has dejado casillas vacias, por favor completa todo el prode", "error");
                     return;
                 } else {
                     // ! AGREGAR ALERTA DE INGRESAR MAIL Y RESETEAR LA VARIABLE RESULTADOS
